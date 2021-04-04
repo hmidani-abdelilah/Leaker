@@ -22,7 +22,7 @@ function encweb() {
 		$cfile = array_reverse($cfile);
 		$excfile = explode('/', $cfile[1]);
 		$excfile = array_reverse($excfile);
-		echo $excfile[0]."<br>";
+		#echo $excfile[0]."<br>";
 		
 		if ((string)$excfile[0] != 'index' and (string)$excfile[0] != 'exethis!' and (string)$excfile[0] != 'altindex') {
 			if ((string)$cfile[0] == 'php') { 
