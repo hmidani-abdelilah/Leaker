@@ -14,7 +14,7 @@ decweb() 함수를 통해 인코딩된 파일을 디코딩할수 있습니다.
 
 ## Info (English)
 
-jjapsomware is a fake ransomware that can be run on a PHP-based web apps. <br>
+jjapsomware is a fake ransomware that can be run on PHP-based web apps. <br>
 Runs on the web app's root directory, and encodes all PHP files into base64. <br>
 The decweb() function allows you to simply decode the encoded files.
 
