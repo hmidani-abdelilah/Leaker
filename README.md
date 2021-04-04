@@ -23,7 +23,3 @@ It's made to learn how actual ransomwares work and how web apps are designed.
 ### Warning!
 
 Never run it on a web app in service!
-
-## Screenshot
-
-![1](https://user-images.githubusercontent.com/75349747/113500827-182c0500-955c-11eb-93f0-ab3c9c4846b3.PNG)
