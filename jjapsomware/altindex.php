@@ -32,6 +32,7 @@
 			color: white;
 		}
 	</style>
+	<?php ?>
 </head>
 <body>
 	<div id = "container">
