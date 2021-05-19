@@ -26,6 +26,7 @@ Never run it on a web app in service!
 
 ### index file replaced
 ![1](https://user-images.githubusercontent.com/75349747/118674222-97d41180-b834-11eb-9590-46ecad8500cc.PNG)
+<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 ### PHP files encrypted into jjap extension
 ![2](https://user-images.githubusercontent.com/75349747/118674227-986ca800-b834-11eb-8baa-ae23d3d27f4e.PNG)
