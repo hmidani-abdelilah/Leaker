@@ -9,7 +9,6 @@
 
 ### 경고!
 
-복호화 코드는 아직 공개되지 않았습니다. <br>
 절대로 서비스중인 웹앱에서 실행하지 마세요!
 
 ## Info (English)
@@ -21,7 +20,6 @@ It's made to learn how actual ransomwares work and how web apps are designed.
 
 ### Warning!
 
-The function for decryption has not been deployed yet. <br>
 Never run it on a web app in service!
 
 ## Screenshot
@@ -29,7 +27,7 @@ Never run it on a web app in service!
 ### index file replaced
 ![1](https://user-images.githubusercontent.com/75349747/118674222-97d41180-b834-11eb-9590-46ecad8500cc.PNG)
 
-### PHP files encrypted
+### PHP files encrypted into jjap extension
 ![2](https://user-images.githubusercontent.com/75349747/118674227-986ca800-b834-11eb-8baa-ae23d3d27f4e.PNG)
-![3](https://user-images.githubusercontent.com/75349747/118674230-99053e80-b834-11eb-8e9a-5cac103d22ed.PNG)
-![4](https://user-images.githubusercontent.com/75349747/118674233-999dd500-b834-11eb-9184-fb8bbd0495e2.PNG)
+![3-1](https://user-images.githubusercontent.com/75349747/118789089-63616380-b8cf-11eb-9c0e-26e24322eeaf.PNG)
+![4-1](https://user-images.githubusercontent.com/75349747/118789117-69574480-b8cf-11eb-90b0-39d23919cc78.PNG)
