@@ -9,7 +9,7 @@ Leaker는 PHP 기반 웹앱에서 실행되는 랜섬웨어입니다.<br>
 
 Leaker는 학습 목적으로 개발되었습니다.
 
-절대로 서비스중인 웹앱에서 실행하지 마세요!
+주의! 절대로 서비스중인 웹앱에서 실행하지 마세요!
 
 ### English
 
@@ -18,7 +18,7 @@ Runs in the root directory of the web app, and encrypts all PHP files into aes-2
 
 Leaker was developed for learning purposes.
 
-Never run it on a web app in service!
+WARNING! Never run it on a web app in service!
 
 ## Info File "How_to_decrypt.txt"
 ![2](https://user-images.githubusercontent.com/75349747/119408812-4985ad80-bd21-11eb-99a3-f231f24c773f.PNG)
@@ -38,15 +38,17 @@ Make sure not to delete anything from the directory and not to restart server (p
 Then, Good luck to you !
 ```
 
-## How to recover without follwing "How_to_decrypt.txt"
+## How to decrypt without follwing "How_to_decrypt.txt"
 
 ### Korean
 
+서버를 재부팅하지 마세요. 복호화 키가 손상될 수 있습니다. <br>
 "exe.php"파일의 라인 179의 <code>if ((string)$title == "nomorephp")</code> 부분을 <code>if (True)</code>로 수정하세요. <br>
 수정후 "exe.php"를 재실행하면 웹사이트가 복구됩니다.
 
 ### English
 
+Never reboot the server. The decryption key may be lost. <br>
 Modify the <code>if ((string)$title == "nomorephp")</code> part of line 179 of the "exe.php" to <code>if (True)</code>. <br>
 Re-runs of "exe.php" will recover your website.
 
