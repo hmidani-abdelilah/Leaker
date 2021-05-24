@@ -1,34 +1,61 @@
-# jjapsomware
+# Leaker
 
-## Info (Korean)
+## Info 
 
-짭섬웨어(jjapsomware)는 PHP 기반 웹앱에서 실행되는 학습용 랜섬웨어입니다. <br>
-웹앱의 루트 디렉터리에서 실행되며, PHP 파일을 모두 랜덤 알고리즘으로 암호화합니다. <br>
+### Korean
 
-웹앱의 구조와 랜섬웨어의 작동방식을 학습하려는 목적으로 제작했습니다.
+Leaker는 PHP 기반 웹앱에서 실행되는 랜섬웨어입니다.<br>
+웹앱의 루트 디렉터리에서 실행되며, PHP 파일을 모두 aes-256 알고리즘으로 암호화합니다.<br>
 
-### 경고!
+Leaker는 학습 목적으로 개발되었습니다.
 
 절대로 서비스중인 웹앱에서 실행하지 마세요!
 
-## Info (English)
+### English
 
-jjapsomware is a ransomware for learning that can be run on PHP-based web apps. <br>
-Runs in the root directory of the web app, and encrypts all PHP files into a random algorithm. <br>
+Leaker is a ransomware that can be run on PHP-based web apps. <br>
+Runs in the root directory of the web app, and encrypts all PHP files into aes-256 algorithm. <br>
 
-It's made to learn how actual ransomwares work and how web apps are designed.
-
-### Warning!
+Leaker was developed for learning purposes.
 
 Never run it on a web app in service!
 
+## Info File "How_to_decrypt.txt"
+![2](https://user-images.githubusercontent.com/75349747/119408812-4985ad80-bd21-11eb-99a3-f231f24c773f.PNG)
+
+```
+This website has been encrypted by Leaker v1.0!
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+How dare use the PHP shit, Leaker have never been able to forgive your website. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+[ https://gall.dcinside.com/programming ]<br>
+If you want to recover your website, you don't need to pay.<br>
+Simply follow these steps to recover your website.<br>
+First, click the link above and write a post with title of "nomorephp". <br>
+Second, If your post get more than 5 "개념" and posted in "개념글", Leaker will decrypt all files.<br>
+Make sure not to delete anything from the directory and not to restart server (possibility of losing decryption key). 
+	
+Then, Good luck to you !
+```
+
+## How to recover without follwing "How_to_decrypt.txt"
+
+### Korean
+
+"exe.php"파일의 라인 179의 <code>if ((string)$title == "nomorephp")</code> 부분을 <code>if (True)</code>로 수정하세요. <br>
+수정후 "exe.php"를 재실행하면 웹사이트가 복구됩니다.
+
+### English
+
+Modify the <code>if ((string)$title == "nomorephp")</code> part of line 179 of the "exe.php" to <code>if (True)</code>. <br>
+Re-runs of "exe.php" will recover your website.
+
 ## Screenshot
 
-### index file replaced
-![1](https://user-images.githubusercontent.com/75349747/118674222-97d41180-b834-11eb-9590-46ecad8500cc.PNG)
-<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+### PHP files encrypted into "leaker" format
 
-### PHP files encrypted into jjap extension
-![2](https://user-images.githubusercontent.com/75349747/118674227-986ca800-b834-11eb-8baa-ae23d3d27f4e.PNG)
-![3-1](https://user-images.githubusercontent.com/75349747/118789089-63616380-b8cf-11eb-9c0e-26e24322eeaf.PNG)
-![4-1](https://user-images.githubusercontent.com/75349747/118789117-69574480-b8cf-11eb-90b0-39d23919cc78.PNG)
+![3](https://user-images.githubusercontent.com/75349747/119408814-4a1e4400-bd21-11eb-911e-ea0bbbb32092.PNG)
+
+### Index file replaced
+![1](https://user-images.githubusercontent.com/75349747/119408809-48548080-bd21-11eb-8638-ac79cc62afe5.PNG)
+<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
