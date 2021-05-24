@@ -4,7 +4,7 @@
 	// https://github.com/antibiotics11
 
 	ini_set('memory_limit', '512M');
-	#ini_set('display_errors', 'Off');
+	ini_set('display_errors', 'Off');
 	
 	// 디렉터리 목록 읽어오는 함수
 	function getdir($dir, &$results = array()) {
