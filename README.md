@@ -14,11 +14,11 @@ Leaker는 학습 목적으로 개발되었습니다.
 ### English
 
 Leaker is a ransomware that can be run on PHP-based web apps. <br>
-Runs in the root directory of the web app, and encrypts all PHP files into aes-256 algorithm. <br>
+It runs in the root directory of the webapp and encrypts all PHP files using the aes-256 algorithm. <br>
 
 Leaker was developed for learning purposes.
 
-WARNING! Never run it on a web app in service!
+WARNING! Do not execute it on a web app in service!
 
 ## Info File "How_to_decrypt.txt"
 ![2](https://user-images.githubusercontent.com/75349747/119408812-4985ad80-bd21-11eb-99a3-f231f24c773f.PNG)
