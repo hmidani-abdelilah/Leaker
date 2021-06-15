@@ -28,11 +28,11 @@ This website has been encrypted by Leaker v1.0!
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 How dare use the PHP shit, Leaker have never been able to forgive your website. 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-[ https://gall.dcinside.com/programming ]<br>
-If you want to recover your website, you don't need to pay.<br>
-Simply follow these steps to recover your website.<br>
-First, click the link above and write a post with title of "nomorephp". <br>
-Second, If your post get more than 5 "개념" and posted in "개념글", Leaker will decrypt all files.<br>
+[ https://gall.dcinside.com/programming ]
+If you want to recover your website, you don't need to pay.
+Simply follow these steps to recover your website.
+First, click the link above and write a post with title of "nomorephp".
+Second, If your post get more than 5 "개념" and posted in "개념글", Leaker will decrypt all files.
 Make sure not to delete anything from the directory and not to restart server (possibility of losing decryption key). 
 	
 Then, Good luck to you !
