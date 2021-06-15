@@ -214,16 +214,10 @@
 		return True;
 	}
 	
-	// 메인 함수
-	function main() {
-		if (check_if_executed()) {
-			get_gall_list();
-		} else {
-			encrypt_web();
-		}
-		
-		return 0;
+	if (check_if_executed()) {
+		get_gall_list();
+	} else {
+		encrypt_web();
 	}
-	
-	main();
+
 ?>
